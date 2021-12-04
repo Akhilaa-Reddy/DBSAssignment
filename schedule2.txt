@@ -1,0 +1,112 @@
+START T1
+START T2
+READ B3 value into y i.e, 8
+READ A2 value into y i.e, 6
+EXECUTE operation y+1 i.e, 7
+EXECUTE operation y+2 i.e, 9
+WRITE y value into B3 i.e, 9
+WRITE y value into A2 i.e, 9
+READ C1 value into z i.e, 6
+READ B2 value into z i.e, 8
+READ A3 value into x i.e, 6
+READ A3 value into x i.e, 6
+EXECUTE operation z=z+x i.e, 14
+EXECUTE operation x+5 i.e, 11
+EXECUTE operation x+2 i.e, 13
+WRITE x value into A3 i.e, 13
+EXECUTE operation x+2 i.e, 15
+EXECUTE operation z+2 i.e, 16
+WRITE x value into A3 i.e, 15
+WRITE z value into B2 i.e, 16
+WRITE z value into C1 i.e, 16
+READ C1 value into y i.e, 16
+READ B3 value into y i.e, 9
+EXECUTE operation y+4 i.e, 13
+EXECUTE operation y+8 i.e, 21
+READ A1 value into z i.e, 13
+READ B2 value into z i.e, 16
+EXECUTE operation z+10 i.e, 17
+EXECUTE operation z+2 i.e, 19
+WRITE z value into A1 i.e, 19
+WRITE z value into B2 i.e, 19
+WRITE y value into C1 i.e, 21
+WRITE y value into B3 i.e, 21
+READ A3 value into x i.e, 15
+READ A1 value into x i.e, 19
+EXECUTE operation x=x+y i.e, 40
+EXECUTE operation x+3 i.e, 43
+WRITE x value into A3 i.e, 43
+WRITE x value into A1 i.e, 43
+COMMIT transaction T0
+COMMIT transaction T0
+END transaction T0
+END transaction T0
+START T3
+START T4
+READ A3 value into y i.e, 43
+READ B1 value into y i.e, 12
+EXECUTE operation y+2 i.e, 14
+EXECUTE operation y+2 i.e, 16
+WRITE y value into A3 i.e, 16
+EXECUTE operation y+2 i.e, 18
+READ B1 value into z i.e, 12
+WRITE y value into B1 i.e, 18
+EXECUTE operation z+1 i.e, 13
+READ A1 value into y i.e, 43
+READ C1 value into x i.e, 21
+EXECUTE operation y+2 i.e, 45
+EXECUTE operation x+4 i.e, 25
+READ C1 value into z i.e, 21
+EXECUTE operation z+4 i.e, 25
+EXECUTE operation z+2 i.e, 27
+WRITE x value into C1 i.e, 25
+WRITE z value into C1 i.e, 27
+WRITE z value into B1 i.e, 27
+WRITE y value into A1 i.e, 45
+READ A1 value into y i.e, 45
+READ A2 value into x i.e, 9
+EXECUTE operation y+2 i.e, 47
+EXECUTE operation x+1 i.e, 10
+READ A2 value into z i.e, 9
+EXECUTE operation x+1 i.e, 11
+EXECUTE operation z+5 i.e, 14
+WRITE x value into A2 i.e, 11
+WRITE z value into A2 i.e, 14
+COMMIT transaction T0
+WRITE y value into A1 i.e, 47
+END transaction T0
+READ C2 value into x i.e, 0
+START T5
+EXECUTE operation x+1 i.e, 1
+READ B2 value into y i.e, 19
+WRITE x value into C2 i.e, 1
+EXECUTE operation y+2 i.e, 21
+COMMIT transaction T0
+EXECUTE operation y+2 i.e, 23
+END transaction T0
+WRITE y value into B2 i.e, 23
+START T6
+READ A1 value into y i.e, 47
+READ B3 value into y i.e, 21
+EXECUTE operation y+2 i.e, 23
+EXECUTE operation y+1 i.e, 24
+READ C1 value into z i.e, 27
+WRITE y value into B3 i.e, 24
+EXECUTE operation z+2 i.e, 29
+READ A2 value into z i.e, 14
+WRITE z value into C1 i.e, 14
+EXECUTE operation z+2 i.e, 16
+WRITE y value into A1 i.e, 24
+READ B2 value into x i.e, 23
+READ A2 value into x i.e, 14
+EXECUTE operation x+3 i.e, 17
+EXECUTE operation x+1 i.e, 18
+WRITE x value into B2 i.e, 18
+EXECUTE operation x+1 i.e, 19
+READ A1 value into y i.e, 24
+WRITE x value into A2 i.e, 19
+EXECUTE operation y+2 i.e, 26
+COMMIT transaction T0
+WRITE y value into A1 i.e, 26
+END transaction T0
+READ A3 value into x i.e, 16

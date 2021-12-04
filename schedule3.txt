@@ -1,0 +1,61 @@
+START T1
+START T2
+1 READ B3 value into y i.e, 8
+2 READ A2 value into y i.e, 6
+1 EXECUTE operation y+1 i.e, 7
+2 EXECUTE operation y+2 i.e, 9
+1 WRITE y value into B3 i.e, 9
+2 WRITE y value into A2 i.e, 9
+1 READ C1 value into z i.e, 6
+2 READ B2 value into z i.e, 8
+1 READ A3 value into x i.e, 6
+2 READ A3 value into x i.e, 6
+1 EXECUTE operation z=z+x i.e, 14
+2 EXECUTE operation x+5 i.e, 11
+1 EXECUTE operation x+2 i.e, 13
+2 WRITE x value into A3 i.e, 13
+1 EXECUTE operation x+2 i.e, 15
+2 EXECUTE operation z+2 i.e, 16
+2 WRITE z value into B2 i.e, 16
+2 READ C1 value into y i.e, 6
+2 EXECUTE operation y+4 i.e, 10
+2 READ A1 value into z i.e, 13
+2 EXECUTE operation z+10 i.e, 14
+2 WRITE z value into A1 i.e, 14
+2 WRITE y value into C1 i.e, 10
+2 READ A3 value into x i.e, 13
+2 EXECUTE operation x=x+y i.e, 23
+2 WRITE x value into A3 i.e, 23
+COMMIT transaction T2
+1 WRITE x value into A3 i.e, 23
+2 END transaction T2
+1 WRITE z value into C1 i.e, 14
+START T3
+1 READ B3 value into y i.e, 9
+1 EXECUTE operation y+8 i.e, 17
+1 READ B2 value into z i.e, 16
+1 EXECUTE operation z+2 i.e, 18
+1 WRITE z value into B2 i.e, 18
+1 WRITE y value into B3 i.e, 17
+1 READ A1 value into x i.e, 14
+1 EXECUTE operation x+3 i.e, 17
+1 WRITE x value into A1 i.e, 17
+COMMIT transaction T1
+3 READ A3 value into y i.e, 23
+1 END transaction T1
+3 EXECUTE operation y+2 i.e, 25
+START T4
+3 WRITE y value into A3 i.e, 25
+4 READ B1 value into y i.e, 12
+3 READ B1 value into z i.e, 12
+4 EXECUTE operation y+2 i.e, 14
+3 EXECUTE operation z+1 i.e, 13
+4 EXECUTE operation y+2 i.e, 16
+3 READ C1 value into x i.e, 14
+4 WRITE y value into B1 i.e, 16
+3 EXECUTE operation x+4 i.e, 18
+4 READ A1 value into y i.e, 17
+3 EXECUTE operation z+4 i.e, 17
+4 EXECUTE operation y+2 i.e, 19
+3 WRITE x value into C1 i.e, 18
+Deadlocked!! with transactions 4 and 3
